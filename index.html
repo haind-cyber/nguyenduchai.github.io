@@ -2,6 +2,16 @@
 <html lang="vi">
 <head>
     <script>
+        // Chỉ chuyển hướng nếu đang truy cập qua địa chỉ GitHub Pages không mong muốn
+        if (window.location.hostname === 'haind-cyber.github.io') {
+            window.location.href = 'https://nguyenduchai.com.vn' + window.location.pathname;
+        }
+        // Tùy chọn: cũng chuyển hướng từ non-www sang www nếu bạn thích
+        if (window.location.hostname === 'nguyenduchai.com.vn') {
+            window.location.href = 'https://www.nguyenduchai.com.vn' + window.location.pathname;
+        }
+    </script>    
+    <script>
     // Redirect logic
     const currentHost = window.location.hostname;
     
