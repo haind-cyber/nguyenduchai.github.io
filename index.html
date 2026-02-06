@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+    <script>
+    // Redirect logic
+    const currentHost = window.location.hostname;
+    
+    // Nếu đang ở github.io, chuyển sang domain chính
+    if (currentHost === 'nguyenduchai.github.io') {
+        window.location.href = 'https://www.nguyenduchai.com.vn' + 
+                              window.location.pathname + 
+                              window.location.search + 
+                              window.location.hash;
+    }
+    
+    // Nếu đang ở domain chính không có www, chuyển sang www
+    if (currentHost === 'nguyenduchai.com.vn') {
+        window.location.href = 'https://www.nguyenduchai.com.vn' + 
+                              window.location.pathname + 
+                              window.location.search + 
+                              window.location.hash;
+    }
+    </script>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nguyễn Đức Hải - MC Tiệc Cưới & Chuyên gia Đa Lĩnh Vực</title>
